@@ -1,0 +1,54 @@
+@import url('../variables.css');
+
+.tracker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-image: url('/src/images/pattern-bg-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 282px;
+    width: 100%;
+}
+
+.tracker__t {
+    color: var(--White);
+    font-weight: var(--fontRubik500);
+    margin-top: 2rem;
+}
+
+.tracker__input__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    height: 58px;
+    width: 100%;
+    max-width: 555px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.tracker__input__container > label {
+    display: none;
+}
+
+#tracker--input {
+    height: 100%;
+    width: 100%;
+}
+
+#tracker--input::placeholder {
+    color: var(--DarkGray);
+    padding-left: 1.5rem;
+}
+
+#tracker--btn {
+    width: 57px;
+    height: 100%;
+    background-color: var(--Black);
+    background-image: url('/src/images/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
