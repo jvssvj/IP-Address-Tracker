@@ -7,5 +7,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    font-size: var(--fontSize);
+    font-size: var(--fontSize18px);
+}
+
+#map {
+    width: 100%;
+    min-height: 520px;
+    /* background-color: var(--DarkGray); */
 }
