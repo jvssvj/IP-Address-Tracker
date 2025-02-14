@@ -12,9 +12,13 @@
 
 </head>
 <body>
+  <picture class="tracker__picture">
+    <source srcset="/src/images/pattern-bg-mobile.png" media="(max-width:)">
+    
+    <img src="/src/images/pattern-bg-desktop.png" alt="">
+  </picture>
 
-  <section class="tracker">
-
+  <section class="tracker__form">
     <h1 class="tracker__t">IP Address Tracker</h1>
 
     <div class="tracker__input__container">
@@ -22,33 +26,43 @@
       <input type="text" name="tracker--input" id="tracker--input" placeholder="Search for any IP address or domain">
       <input id="tracker--btn" type="button" value="">
     </div>
-     
   </section>
 
-  <main class="tracker__infos">
-    <div class="tracker__infos__address">
-      <span class="tracker__infos__address__t">IP Address</span>
-      <span class="tracker__infos__address__ip">192.212.174.101</span>
+  <main class="tracker__infos__container">
+
+    <div class="tracker__infos__container__content">
+
+      <div class="tracker__infos">
+        <span id="tracker__infos__address__t" class="tracker__infos__t">IP Address</span>
+        <span id="tracker__infos__address__ip" class="tracker__infos__detail">192.212.174.101</span>
+      </div>
+      
+      <hr class="line">
+  
+      <div class="tracker__infos">
+        <span id="tracker__infos__location__t" class="tracker__infos__t">Location</span>
+        <span id="tracker__infos__location__info" class="tracker__infos__detail">Brooklyn, NY 10001</span>
+      </div>
+  
+      <hr class="line">
+  
+      <div class="tracker__infos">
+        <span id="tracker__infos__time__t" class="tracker__infos__t">Timezone</span>
+        <span id="tracker__infos_time__info" class="tracker__infos__detail">UTC-05:00</span>
+      </div>
+  
+      <hr class="line">
+  
+      <div class="tracker__infos">
+        <span id="tracker__infos__isp__t" class="tracker__infos__t">Isp</span>
+        <span id="tracker__infos_isp__info" class="tracker__infos__detail">SpaceX Starlink</span>
+      </div>
+
     </div>
 
-    <div class="tracker__infos__location">
-      <span class="tracker__infos__location__t">Location</span>
-      <span class="tracker__infos__location__info">Brooklyn, NY 10001</span>
-    </div>
-
-    <div class="tracker__infos__time">
-      <span class="tracker__infos__time__t">Location</span>
-      <span class="tracker__infos_time__info">UTC-05:00</span>
-    </div>
-
-    <div class="tracker__infos__isp">
-      <span class="tracker__infos__isp__t">SpaceX</span>
-      <span class="tracker__infos_isp__info">Starlink</span>
-    </div>
   </main>
 
   <div id="map"></div>
-
   
   <footer class="attribution">
     <p >Challenge by <a href="https://www.frontendmentor.io/profile/jvssvj" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-62b518263/" target="_blank">João Vitor</a></p>

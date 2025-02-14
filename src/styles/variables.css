@@ -13,7 +13,10 @@
     --fontRubik400: 400;
     --fontRubik500: 500;
     --fontRubik700: 700;
-    --fontSize: 1.125rem;
+    --fontSize13px: .8125rem;
+    --fontSize18px: 1.125rem;
+    --fontSize27px: 1.5em;
+    
 
     --VeryDarkGray: hsl(0, 0%, 17%);
     --DarkGray: hsl(0, 0%, 59%);

@@ -1,15 +1,27 @@
 @import url('../variables.css');
 
-.tracker {
+
+.tracker__form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    background-image: url('/src/images/pattern-bg-desktop.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 282px;
+    height: 280px;
     width: 100%;
+    padding: 0em 1.5rem;
+}
+
+.tracker__picture {
+    position: absolute;
+    z-index: -1;
+    height: 280px;
+    width: 100%;
+}
+
+.tracker__picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .tracker__t {
@@ -37,11 +49,11 @@
 #tracker--input {
     height: 100%;
     width: 100%;
+    padding-left: 1.5rem;
 }
 
 #tracker--input::placeholder {
     color: var(--DarkGray);
-    padding-left: 1.5rem;
 }
 
 #tracker--btn {
@@ -51,4 +63,5 @@
     background-image: url('/src/images/icon-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 }
