@@ -29,7 +29,7 @@
 
 .line {
     height: 1px;
-    width: 77px;
+    width: 200px;
     background-color: var(--DarkGray);
     transform: rotate(90deg);
     opacity: .3;
@@ -51,3 +51,30 @@
     font-size: var(--fontSize27px);
 }
 
+@media(max-width: 850px) {
+    .tracker__infos__container {
+        max-width: 500px;
+    }
+    .tracker__infos__container__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .tracker__infos {
+        max-width: unset;
+        text-align: center;
+    }
+}
+
+@media(max-width:600px) {
+    .tracker__infos__detail {
+        color: var(--Black);
+        font-weight: var(--fontRubik500);
+        font-size: var(--fontSize18px);
+    }
+}
