@@ -32,17 +32,23 @@
 
 .tracker__input__container {
     display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 555px;
+}
+
+.tracker__input__content {
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
     height: 58px;
     width: 100%;
-    max-width: 555px;
-    border-radius: 1rem;
-    overflow: hidden;
 }
 
-.tracker__input__container > label {
+#tracker--input--label{
     display: none;
 }
 
@@ -50,10 +56,16 @@
     height: 100%;
     width: 100%;
     padding-left: 1.5rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
 #tracker--input::placeholder {
     color: var(--DarkGray);
+}
+
+#tracker--input:focus {
+    outline: none;
 }
 
 #tracker--btn {
@@ -64,4 +76,29 @@
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.tracker__input__container__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: .5rem;
+}
+
+.tracker__form__find__ip,
+#show--error {
+    font-size: var(--fontSize13px);
+    color: var(--White);
+    margin-left: 1rem;
+}
+
+#show--error {
+    display: none;
+    background-color: var(--Red);
+    margin-right: 1rem;
+    padding: .1rem .7rem;
+    border-radius: 1rem;
 }

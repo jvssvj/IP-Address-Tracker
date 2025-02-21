@@ -9,7 +9,6 @@ export async function getAddress(ip) {
             throw new Error('Failed to find address');
         }
         const data = await resp.json();
-        const trackerInput = document.querySelector('#tracker--input').value = data.ip;
         return data;
     }
     catch (error) {

@@ -7,6 +7,7 @@
     position: absolute;
     margin-top: 12.5rem;
     padding: 0em 1em;
+    z-index: 2;
 }
 
 .tracker__infos__container__content {

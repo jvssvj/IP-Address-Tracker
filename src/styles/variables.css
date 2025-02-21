@@ -22,4 +22,6 @@
     --DarkGray: hsl(0, 0%, 59%);
     --White: hsl(0, 0%, 100%);
     --Black: hsl(0, 0%, 0%);
+    --Blue: hsl(241, 40%, 46%);
+    --Red: hsl(0, 100%, 44%);
 }

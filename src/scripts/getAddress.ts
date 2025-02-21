@@ -4,6 +4,8 @@ interface Address {
     ip: string
     isp: string
     location: {
+        lat: number
+        lng: number
         city: string
         country: string
         region: string
@@ -23,8 +25,7 @@ export async function getAddress(ip:string) {
         }
 
         const data: Address = await resp.json()
-        const trackerInput = document.querySelector<HTMLInputElement>('#tracker--input').value = data.ip
-
+        
         return data
 
     } catch (error) {

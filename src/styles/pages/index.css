@@ -12,6 +12,29 @@ body {
 
 #map {
     width: 100%;
-    min-height: 520px;
-    /* background-color: var(--DarkGray); */
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.error {
+    border: 2px solid var(--Red);
+}
+
+#show--error.visible {
+    display: block;
+}
+
+.attribution {
+    text-align: center;
+    font-size: var(--fontSize13px);
+    padding: .2rem;
+    background-color: var(--Blue);
+    color: var(--White);
+    width: 100%;
+}
+
+.attribution a {
+    font-weight: 500;
+    color: var(--White);
 }

@@ -8,6 +8,4 @@ export function setAddress(ipParam: string, city: string, countryParam:string, r
     location.textContent = `${city}, ${regionParam}, ${countryParam}`
     timezone.textContent = `UTC${timezoneParam}`
     isp.textContent = ispParam
-
-
 }

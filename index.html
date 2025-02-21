@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="src/styles/global.css">
   <script src="dist/index.js" type="module"></script>
   
+  <!-- CSS do Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- JS do Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    
   <title>Frontend Mentor | IP Address Tracker</title>
 
 </head>
@@ -23,9 +28,18 @@
     <h1 class="tracker__t">IP Address Tracker</h1>
 
     <div class="tracker__input__container">
-      <label for="tracker--input">Search here</label>
-      <input type="text" name="tracker--input" id="tracker--input" placeholder="Search for any IP address or domain">
-      <input id="tracker--btn" type="button" value="">
+
+      <div class="tracker__input__content">
+        <label id="tracker--input--label"  for="tracker--input">Search here</label>
+        <input type="text" name="tracker--input" id="tracker--input" placeholder="Search for any IP address or domain">
+        <input id="tracker--btn" type="button" value="">
+      </div>
+
+      <div class="tracker__input__container__footer">
+        <a class="tracker__form__find__ip" href="https://icanhazip.com/" target="_blank">Don't know your IP?</a>
+        <span id="show--error"></span>
+      </div>
+
     </div>
   </section>
 
