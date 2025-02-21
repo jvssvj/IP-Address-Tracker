@@ -17,6 +17,10 @@ body {
     z-index: 1;
 }
 
+.leaflet-top.leaflet-left .leaflet-control-zoom {
+    margin-top: 10em;
+}
+
 .error {
     border: 2px solid var(--Red);
 }
@@ -28,7 +32,7 @@ body {
 .attribution {
     text-align: center;
     font-size: var(--fontSize13px);
-    padding: .2rem;
+    padding: .5rem 0rem;
     background-color: var(--Blue);
     color: var(--White);
     width: 100%;
@@ -37,4 +41,10 @@ body {
 .attribution a {
     font-weight: 500;
     color: var(--White);
+}
+
+@media(max-width:600px) {
+    .leaflet-top.leaflet-left .leaflet-control-zoom {
+        margin-top: 25em;
+    }
 }
