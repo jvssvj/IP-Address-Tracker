@@ -72,7 +72,7 @@
     width: 57px;
     height: 100%;
     background-color: var(--Black);
-    background-image: url('../../images/icon-arrow.svg');
+    background-image: url('../../../src/images/icon-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
