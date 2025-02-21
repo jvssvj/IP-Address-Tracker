@@ -28,7 +28,7 @@ export function map(lat: number, lng: number, region: string, country: string) {
     }).addTo(mapInstance);
 
     const customIcon = L.icon({
-        iconUrl: '/src/images/icon-location.svg', // Verifique se o caminho está correto
+        iconUrl: './images/icon-location.svg', // Verifique se o caminho está correto
         iconSize: [42, 42],
         iconAnchor: [16, 52],
         popupAnchor: [5, -40]
